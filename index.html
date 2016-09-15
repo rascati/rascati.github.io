@@ -1,95 +1,42 @@
-<nav class="navbar navbar-inverse navbar-fixed-top mike-navbar">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#/home">
-                THRIFTY
-            </a>
+<!DOCTYPE html>
+<html lang="en">
+<!--<html lang="en" ng-app="Thrifty">-->
+    <head>
+        <title>Michael Rascati</title>
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+        <!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+        <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+        <!--<meta name="viewport" content="initial-scale=1.25, user-scalable = no">-->
+
+        <!--<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet"/>-->
+        <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>-->
+        <link href="css/style.css" rel="stylesheet"/>
+        <!--<link href="css/jquery-ui.css" rel="stylesheet"/>-->
+
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>-->
+
+        <!--<script src="app.js"></script>-->
+        <!--script src="config.js"></script-->
+
+    </head>
+    <body id="page">
+        <!--<div ng-view class="container"></div>-->
+        <div>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                </li>
+            </ul>
         </div>
-        <div ng-if="model.user">
-            <p class="navbar-text pull-right anchor">
-                <a class="mybutton" href="#/profile" class="navbar-link">
-                    click1
-                </a>
-                &nbsp·&nbsp
-                <a class="mybutton" href="#/profile/cart" class="navbar-link">
-                    click2
-                </a>
-            </p>
-        </div>
-        <div ng-if="!model.user">
-            <p class="navbar-text pull-right anchor">
-                <a class="mybutton" href="#/login" class="navbar-link">
-                    click3
-                </a>
-                &nbsp·&nbsp
-                <a class="mybutton" href="#/register" class="navbar-link">
-                    click4
-                </a>
-            </p>
-        </div>
-    </div>
-</nav>
-
-<h2 id="tagline">
-    An online marketplace for used clothing
-</h2>
-
-<h5 id="help">Search below, or sign in to sell your items</h5>
-<br>
-
-<form id="myForm" name="myForm" class="input-group input-group-md">
-    <input ng-model="model.searchParam" type="search" placeholder="search" class="form-control">
-        <span class="input-group-btn">
-            <button ng-click="model.search()" id="search-button" class="btn btn-info" type="submit">Explore</button>
-        </span>
-</form>
-
-<div ng-show="model.items" class="image-grid">
-    <div ng-repeat="item in model.items">
-        <a href="#/item/{{item._id}}/view">
-            <div class="result">
-                <div class="result-image"
-                     style="width: 180px; height: 180px;
-                     background-image: url('{{item.image}}');
-                     background-size: auto 100%; background-color: rgba(0,0,0,0);
-                     background-position: center; overflow: hidden">
-                </div>
-                <a class="result-text" href="#/item/{{item._id}}/view">
-                    {{item.name}}
-                    <div class="result-price">
-                        ${{item.price}}
-                    </div>
-                </a>
-            </div>
-        </a>
-    </div>
-</div>
-
-<!--<div ng-if="model.emptyItems && myForm.$submitted" class="alert alert-danger"-->
-<!--style="color: white; font-size: 12pt; font-style: italic;">-->
-<!--No results matching your query-->
-<!--</div>-->
-<div ng-show="!myForm.$submitted" form="myForm" class="store-quantity">
-    There are currently {{model.numItems}} items being sold
-</div>
-
-<div ng-hide="model.items" class="image-grid">
-    <div ng-repeat="item in model.allItems">
-        <a href="#/item/{{item._id}}/view">
-            <div class="result">
-                <div class="result-image"
-                     style="width: 180px; height: 180px;
-                     background-image: url('{{item.image}}');
-                     background-size: auto 100%; background-color: rgba(0,0,0,0);
-                     background-position: center; overflow: hidden">
-                </div>
-                <a class="result-text" href="#/item/{{item._id}}/view">
-                    {{item.name}}
-                    <div class="result-price">
-                        ${{item.price}}
-                    </div>
-                </a>
-            </div>
-        </a>
-    </div>
-</div>
+    </body>
+</html>
+<!--</head>-->
+<!--<body id="page">-->
+<!--<div ng-view class="container"></div>-->
+<!--</body>-->
+<!--</html>-->
