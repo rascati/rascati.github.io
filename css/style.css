@@ -4,6 +4,17 @@ body {
     /*margin-right: 10%;*/
 }
 
+#face {
+    /*background-image: url('/images/face.jpg');*/
+    height: 25%;
+    width: 25%;
+    /*bottom: 0;*/
+}
+
+#face:hover {
+    /*background-image: url('LibraryHoverTrans.png');*/
+}
+
 #contact {
     float: right;
 }
@@ -29,7 +40,6 @@ ul.bottomnav li {
 
 ul.bottomnav li a {
     display: inline-block;
-    /*width: fit-content;*/
     color: #f2f2f2;
     text-align: center;
     padding: 17px 17px;
@@ -42,8 +52,8 @@ ul.bottomnav li a {
 
 /* Change background color of links on hover */
 ul.bottomnav li a:hover {
-    color: #f2f2f2;
-    background-color: #555;
+    color: #333;
+    background-color: #f2f2f2;
     border-radius: 4px;
 }
 
@@ -53,20 +63,19 @@ ul.bottomnav #email a:hover, #phone a:hover {
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.bottomnav li.icon {
-    display: none;
-}
+ul.bottomnav li.icon { display: none; }
 
 /* Remove margins and padding from the list, and add a black background color */
 /*ul.topnav {*/
 ul.topnav {
     list-style-type: none;
     margin: 0;
+    margin-left: 11%;
+    margin-right: 11%;
     padding-left: 10px;
     padding-right: 20px;
     overflow: hidden;
     background-color: transparent;
-    /*background-color: #333;*/
 }
 
 /* Float the list items side by side */
@@ -76,9 +85,8 @@ ul.topnav li {float: left;}
 ul.topnav li a {
     display: inline-block;
     color: #333;
-    /*color: #f2f2f2;*/
     text-align: center;
-    padding: 12px 18px;
+    padding: 11px;
     margin-left: 5px;
     margin-right: 5px;
     text-decoration: none;
