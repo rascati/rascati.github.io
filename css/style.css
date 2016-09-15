@@ -5,15 +5,49 @@ body {
 }
 
 #face {
-    /*background-image: url('/images/face.jpg');*/
-    height: 25%;
-    width: 25%;
-    /*bottom: 0;*/
+    vertical-align: middle;
+    height: 30%;
+    width: 30%;
 }
 
-#face:hover {
-    /*background-image: url('LibraryHoverTrans.png');*/
+.frame {
+    white-space: nowrap;
+    text-align: center;
+    margin: 6em 0;
 }
+
+.image {
+    position: relative;
+    width: 30%;
+    height: 30%;
+}
+
+.image img {
+    width: 100%;
+    vertical-align: center;
+}
+
+.image:after {
+    content: "\A";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.image:hover:after {
+    opacity: 1;
+}
+
+/*#face:hover {*/
+    /*shadow: rgba(45, 45, 45, 0.47);*/
+    /*z-index: 1;*/
+/*}*/
 
 #contact {
     float: right;
