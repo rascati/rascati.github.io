@@ -1,14 +1,21 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+#contact {
+    float: right;
+}
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 20px;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
+    /*background-color: #333;*/
 }
 
 /* Float the list items side by side */
@@ -17,19 +24,28 @@ ul.topnav li {float: left;}
 /* Style the links inside the list items */
 ul.topnav li a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #333;
+    /*color: #f2f2f2;*/
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 18px;
+    margin-left: 5px;
+    margin-right: 5px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: .2s;
     font-size: 17px;
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover {
+    color: #f2f2f2;
+    background-color: #555;
+    border-radius: 4px;
+}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
+ul.topnav li.icon {
+    display: none;
+}
 
 /*.....................................*/
 
