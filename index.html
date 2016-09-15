@@ -1,1 +1,95 @@
-Hello World
+<nav class="navbar navbar-inverse navbar-fixed-top mike-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/home">
+                THRIFTY
+            </a>
+        </div>
+        <div ng-if="model.user">
+            <p class="navbar-text pull-right anchor">
+                <a class="mybutton" href="#/profile" class="navbar-link">
+                    click1
+                </a>
+                &nbsp·&nbsp
+                <a class="mybutton" href="#/profile/cart" class="navbar-link">
+                    click2
+                </a>
+            </p>
+        </div>
+        <div ng-if="!model.user">
+            <p class="navbar-text pull-right anchor">
+                <a class="mybutton" href="#/login" class="navbar-link">
+                    click3
+                </a>
+                &nbsp·&nbsp
+                <a class="mybutton" href="#/register" class="navbar-link">
+                    click4
+                </a>
+            </p>
+        </div>
+    </div>
+</nav>
+
+<h2 id="tagline">
+    An online marketplace for used clothing
+</h2>
+
+<h5 id="help">Search below, or sign in to sell your items</h5>
+<br>
+
+<form id="myForm" name="myForm" class="input-group input-group-md">
+    <input ng-model="model.searchParam" type="search" placeholder="search" class="form-control">
+        <span class="input-group-btn">
+            <button ng-click="model.search()" id="search-button" class="btn btn-info" type="submit">Explore</button>
+        </span>
+</form>
+
+<div ng-show="model.items" class="image-grid">
+    <div ng-repeat="item in model.items">
+        <a href="#/item/{{item._id}}/view">
+            <div class="result">
+                <div class="result-image"
+                     style="width: 180px; height: 180px;
+                     background-image: url('{{item.image}}');
+                     background-size: auto 100%; background-color: rgba(0,0,0,0);
+                     background-position: center; overflow: hidden">
+                </div>
+                <a class="result-text" href="#/item/{{item._id}}/view">
+                    {{item.name}}
+                    <div class="result-price">
+                        ${{item.price}}
+                    </div>
+                </a>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!--<div ng-if="model.emptyItems && myForm.$submitted" class="alert alert-danger"-->
+<!--style="color: white; font-size: 12pt; font-style: italic;">-->
+<!--No results matching your query-->
+<!--</div>-->
+<div ng-show="!myForm.$submitted" form="myForm" class="store-quantity">
+    There are currently {{model.numItems}} items being sold
+</div>
+
+<div ng-hide="model.items" class="image-grid">
+    <div ng-repeat="item in model.allItems">
+        <a href="#/item/{{item._id}}/view">
+            <div class="result">
+                <div class="result-image"
+                     style="width: 180px; height: 180px;
+                     background-image: url('{{item.image}}');
+                     background-size: auto 100%; background-color: rgba(0,0,0,0);
+                     background-position: center; overflow: hidden">
+                </div>
+                <a class="result-text" href="#/item/{{item._id}}/view">
+                    {{item.name}}
+                    <div class="result-price">
+                        ${{item.price}}
+                    </div>
+                </a>
+            </div>
+        </a>
+    </div>
+</div>
