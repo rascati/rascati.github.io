@@ -1,13 +1,64 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
+    /*margin-left: 10%;*/
+    /*margin-right: 10%;*/
 }
 
 #contact {
     float: right;
 }
+
+ul.contactList {
+    list-style-type: none;;
+}
+
+ul.bottomnav {
+    list-style-type: none;
+    /*text-align: center;*/
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul.bottomnav li {
+    float: left;
+}
+
+ul.bottomnav li a {
+    display: inline-block;
+    /*width: fit-content;*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 17px 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: .2s;
+    font-size: 15px;
+}
+
+/* Change background color of links on hover */
+ul.bottomnav li a:hover {
+    color: #f2f2f2;
+    background-color: #555;
+    border-radius: 4px;
+}
+
+ul.bottomnav #email a:hover, #phone a:hover {
+    color: #f2f2f2;
+    background-color: #333;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.bottomnav li.icon {
+    display: none;
+}
+
 /* Remove margins and padding from the list, and add a black background color */
+/*ul.topnav {*/
 ul.topnav {
     list-style-type: none;
     margin: 0;

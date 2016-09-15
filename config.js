@@ -5,18 +5,20 @@
 
     function Config($routeProvider) {
         $routeProvider
-            .when("html/contact", {
-                templateUrl: "contact.html",
-                // controller: "HomeController",
-                // controllerAs: "model",
+            .when("/home", {
+                templateUrl: "pages/home.html"
+            })
+            .when("/resume", {
+                templateUrl: "pages/resume.html"
+            })
+            .when("/portfolio", {
+                templateUrl: "pages/portfolio.html"
+            })
+            .when("/contact", {
+                templateUrl: "pages/contact.html"
+            })
+            .otherwise({
+                redirectTo: "/home"
             });
-            // .when("/login", {
-            //     templateUrl: "views/user/login.view.client.html",
-            //     controller: "LoginController",
-            //     controllerAs: "model"
-            // })
-            // .otherwise({
-            //     redirectTo: "/home"
-            // });
     }
 })();
