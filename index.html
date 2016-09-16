@@ -2,30 +2,29 @@
 <html lang="en" ng-app="Michael Rascati">
     <head>
         <title>Michael Rascati</title>
-         <link href="public/favicon.ico" rel="icon" type="image/x-icon" />
-        
-        <!--<link rel="apple-touch-icon-precomposed" sizes="57x57" href="public/apple-touch-icon-57x57.png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/apple-touch-icon-114x114.png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/apple-touch-icon-72x72.png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144x144.png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="60x60" href="public/apple-touch-icon-60x60.png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="120x120" href="public/apple-touch-icon-120x120.png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="76x76" href="public/apple-touch-icon-76x76.png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" sizes="152x152" href="public/apple-touch-icon-152x152.png" />-->
-        <!--<link rel="icon" type="image/png" href="public/favicon-196x196.png" sizes="196x196" />-->
-        <!--<link rel="icon" type="image/png" href="public/favicon-96x96.png" sizes="96x96" />-->
-        <!--<link rel="icon" type="image/png" href="public/favicon-32x32.png" sizes="32x32" />-->
-        <!--<link rel="icon" type="image/png" href="public/favicon-16x16.png" sizes="16x16" />-->
-        <!--<link rel="icon" type="image/png" href="public/favicon-128.png" sizes="128x128" />-->
-        <!--<meta name="application-name" content="Michael Rascati"/>-->
-        <!--<meta name="msapplication-TileColor" content="#" />-->
-        <!--<meta name="msapplication-TileImage" content="public/mstile-144x144.png" />-->
-        <!--<meta name="msapplication-square70x70logo" content="public/mstile-70x70.png" />-->
-        <!--<meta name="msapplication-square150x150logo" content="public/mstile-150x150.png" />-->
-        <!--<meta name="msapplication-wide310x150logo" content="public/mstile-310x150.png" />-->
-        <!--<meta name="msapplication-square310x310logo" content="public/mstile-310x310.png" />-->
-
-
+        <div>
+            <link href="public/favicon.ico" rel="icon" type="image/x-icon" />
+            <link rel="apple-touch-icon-precomposed" sizes="57x57" href="public/apple-touch-icon-57x57.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/apple-touch-icon-114x114.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/apple-touch-icon-72x72.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144x144.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="60x60" href="public/apple-touch-icon-60x60.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="120x120" href="public/apple-touch-icon-120x120.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="76x76" href="public/apple-touch-icon-76x76.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href="public/apple-touch-icon-152x152.png" />
+            <link rel="icon" type="image/png" href="public/favicon-196x196.png" sizes="196x196" />
+            <link rel="icon" type="image/png" href="public/favicon-96x96.png" sizes="96x96" />
+            <link rel="icon" type="image/png" href="public/favicon-32x32.png" sizes="32x32" />
+            <link rel="icon" type="image/png" href="public/favicon-16x16.png" sizes="16x16" />
+            <link rel="icon" type="image/png" href="public/favicon-128.png" sizes="128x128" />
+            <meta name="application-name" content="Michael Rascati"/>
+            <meta name="msapplication-TileColor" content="#" />
+            <meta name="msapplication-TileImage" content="public/mstile-144x144.png" />
+            <meta name="msapplication-square70x70logo" content="public/mstile-70x70.png" />
+            <meta name="msapplication-square150x150logo" content="public/mstile-150x150.png" />
+            <meta name="msapplication-wide310x150logo" content="public/mstile-310x150.png" />
+            <meta name="msapplication-square310x310logo" content="public/mstile-310x310.png" />
+        </div>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         <script src="js/navbar.js"></script>
         <link href="css/style.css" rel="stylesheet"/>
@@ -43,7 +42,6 @@
 
         <script src="app.js"></script>
         <script src="config.js"></script>
-
     </head>
     <body id="page">
         <div>
@@ -51,7 +49,6 @@
                 <li><a href="#/home">Home</a></li>
                 <li><a href="#/resume">Resume</a></li>
                 <li><a href="#/portfolio">Portfolio</a></li>
-                <!--<li><a href="#contact">Contact</a></li>-->
                 <li id="contact"><a href="#/contact">Contact</a></li>
                 <li class="icon">
                     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
@@ -62,17 +59,16 @@
         <div ng-view class="container"></div>
 
         <div>
-            <ul class="bottomnav" id="myBottomnav">
-                <li id="email"><a>rascatimichael [at] gmail [dot] com</a></li>
+            <ul class="bottomnav flexcontainer" id="myBottomnav">
+                <!--<li id="email"><a>rascatimichael [at] gmail [dot] com</a></li>-->
                 <li><a href="http://github.com/rascati">
                         <i class="fa fa-github fa-lg" aria-hidden="true"></i>
                     </a></li>
                 <li><a href="https://www.linkedin.com/in/rascati">
                         <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
                     </a></li>
-                <li id="phone"><a>(224)&nbsp&middot&nbsp430&nbsp&middot&nbsp7750</a></li>
+                <!--<li id="phone"><a>(224)&nbsp&middot&nbsp430&nbsp&middot&nbsp7750</a></li>-->
             </ul>
         </div>
-
     </body>
 </html>

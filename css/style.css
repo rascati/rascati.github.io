@@ -1,71 +1,109 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
     /*margin-left: 10%;*/
     /*margin-right: 10%;*/
 }
 
-#face {
-    vertical-align: middle;
-    height: 30%;
-    width: 30%;
+.flexcontainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
-.frame {
-    white-space: nowrap;
-    text-align: center;
-    margin: 6em 0;
-}
-
-.image {
+.image-container {
     position: relative;
-    width: 30%;
-    height: 30%;
+    display: inline-block;
+    overflow: hidden;
+    width: 200px;
 }
-
-.image img {
+.image-container img {
+    /*width: 200px;*/
     width: 100%;
-    vertical-align: center;
+    vertical-align: top;
 }
-
-.image:after {
-    content: "\A";
-    position: absolute;
-    width: 30%;
-    height: 30%;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.6);
-    opacity: 0;
-    transition: all 1s;
-    -webkit-transition: all 1s;
-}
-
-.image:hover:after {
+.image-container img:hover {
     opacity: 1;
+    top: 0;
+    z-index: 500;
 }
-
-/*#face:hover {*/
-    /*shadow: rgba(45, 45, 45, 0.47);*/
-    /*z-index: 1;*/
+.image-container:hover a span {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.image-container a {
+    display: block;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: inherit;
+}
+/*.image {*/
+    /*position: relative;*/
+    /*width: 200px;*/
+    /*!*margin: 6em 0;*!*/
 /*}*/
+
+/*.image img {*/
+    /*width: 100%;*/
+    /*vertical-align: top;*/
+/*}*/
+
+/*.image:after {*/
+    /*!*content: '\A';*!*/
+    /*content: attr(data-content);*/
+    /*color: #f2f2f2;*/
+
+    /*position: absolute;*/
+    /*width: 100%; height:100%;*/
+    /*top:0; left:0;*/
+    /*background:rgba(0,0,0,0.65);*/
+    /*opacity: 0;*/
+    /*transition: all .3s;*/
+    /*-webkit-transition: all .3s;*/
+/*}*/
+
+/*.image:hover:after {*/
+    /*opacity: 1;*/
+/*}*/
+
+#description {
+    text-align: center;
+    padding-top: 30px;
+}
 
 #contact {
     float: right;
 }
 
 ul.contactList {
-    list-style-type: none;;
+    list-style-type: none;
 }
 
 ul.bottomnav {
+    padding: 0;
     list-style-type: none;
-    /*text-align: center;*/
+    text-align: center;
     margin: 0;
+    margin-left: -8px;
     overflow: hidden;
     background-color: #333;
     position: fixed;
     bottom: 0;
     width: 100%;
+
 }
 
 ul.bottomnav li {
@@ -77,8 +115,8 @@ ul.bottomnav li a {
     color: #f2f2f2;
     text-align: center;
     padding: 17px 17px;
-    margin-left: 5px;
-    margin-right: 5px;
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
     text-decoration: none;
     transition: .2s;
     font-size: 15px;
@@ -87,8 +125,7 @@ ul.bottomnav li a {
 /* Change background color of links on hover */
 ul.bottomnav li a:hover {
     color: #333;
-    background-color: #f2f2f2;
-    border-radius: 4px;
+    background-color: #fafafa;
 }
 
 ul.bottomnav #email a:hover, #phone a:hover {
@@ -100,12 +137,11 @@ ul.bottomnav #email a:hover, #phone a:hover {
 ul.bottomnav li.icon { display: none; }
 
 /* Remove margins and padding from the list, and add a black background color */
-/*ul.topnav {*/
 ul.topnav {
     list-style-type: none;
     margin: 0;
-    margin-left: 11%;
-    margin-right: 11%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding-left: 10px;
     padding-right: 20px;
     overflow: hidden;
@@ -120,7 +156,10 @@ ul.topnav li a {
     display: inline-block;
     color: #333;
     text-align: center;
-    padding: 11px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 11px;
+    padding-right: 11px;
     margin-left: 5px;
     margin-right: 5px;
     text-decoration: none;
@@ -132,7 +171,7 @@ ul.topnav li a {
 ul.topnav li a:hover {
     color: #f2f2f2;
     background-color: #555;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
