@@ -1,55 +1,33 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #fafafa;
-    /*margin-left: 10%;*/
-    /*margin-right: 10%;*/
-}
-
-.flexcontainer {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
 }
 
 .image-container {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    width: 200px;
-}
-.image-container img {
+    margin: 25px;
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*overflow: hidden;*/
     /*width: 200px;*/
-    width: 100%;
-    vertical-align: top;
 }
-.image-container img:hover {
-    opacity: 1;
-    top: 0;
-    z-index: 500;
-}
-.image-container:hover a span {
-    top: 50%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-}
-.image-container a {
-    display: block;
-    position: absolute;
-    top: -100%;
-    opacity: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    color: inherit;
-}
+
+/*.image-container {*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*overflow: hidden;*/
+    /*width: 200px;*/
+/*}*/
+/*.image-container a {*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: -100%;*/
+    /*opacity: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*text-align: center;*/
+    /*color: inherit;*/
+/*}*/
 /*.image {*/
     /*position: relative;*/
     /*width: 200px;*/
@@ -81,75 +59,75 @@ body {
 
 #description {
     text-align: center;
-    padding-top: 30px;
-}
-
-#contact {
-    float: right;
 }
 
 ul.contactList {
     list-style-type: none;
 }
 
+/*.nav {*/
+    /*background-color: #333;*/
+    /*width:100%;*/
+    /*!*height: inherit;*!*/
+/*}*/
+
 ul.bottomnav {
-    padding: 0;
     list-style-type: none;
-    text-align: center;
-    margin: 0;
-    margin-left: -8px;
     overflow: hidden;
     background-color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -8px;
     position: fixed;
     bottom: 0;
     width: 100%;
-
 }
-
-ul.bottomnav li {
-    float: left;
-}
-
+/* Float the list items side by side */
+ul.bottomnav li { float: left; }
+/* Style the links inside the list items */
 ul.bottomnav li a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #fafafa;
     text-align: center;
-    padding: 17px 17px;
-    /*margin-left: 5px;*/
-    /*margin-right: 5px;*/
+    padding: 12px 15px;
     text-decoration: none;
     transition: .2s;
-    font-size: 15px;
+    /*font-size: 17px;*/
 }
-
-/* Change background color of links on hover */
 ul.bottomnav li a:hover {
     color: #333;
     background-color: #fafafa;
 }
-
-ul.bottomnav #email a:hover, #phone a:hover {
-    color: #f2f2f2;
-    background-color: #333;
+ul.bottomnav li.icon {
+    display: none;
 }
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.bottomnav li.icon { display: none; }
+#git {
+    margin-left: 16%;
+}
+
+.flexcontainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
-    margin: 0;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-left: 10px;
+    margin: 0 15%;
     padding-right: 20px;
     overflow: hidden;
     background-color: transparent;
 }
 
 /* Float the list items side by side */
-ul.topnav li {float: left;}
+ul.topnav li { float: left; }
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -160,21 +138,16 @@ ul.topnav li a {
     padding-bottom: 9px;
     padding-left: 11px;
     padding-right: 11px;
-    margin-left: 5px;
-    margin-right: 5px;
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
     text-decoration: none;
     transition: .2s;
     font-size: 17px;
 }
-
-/* Change background color of links on hover */
 ul.topnav li a:hover {
     color: #f2f2f2;
     background-color: #555;
-    /*border-radius: 4px;*/
 }
-
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {
     display: none;
 }
