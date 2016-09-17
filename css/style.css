@@ -9,6 +9,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 350px;
+    justify-content: center;
     /*margin-left: 30%;*/
     /*margin-right: 30%;*/
 }
@@ -22,14 +23,14 @@ body {
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
 
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-flex-direction: column;*/
+    /*flex-direction: column;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
 }
 
 .box .overbox {
@@ -90,14 +91,6 @@ body {
     opacity: 1;
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
-}
-
-#description {
-    text-align: center;
-}
-
-ul.contactList {
-    list-style-type: none;
 }
 
 /*.nav {*/
@@ -186,6 +179,10 @@ ul.topnav li a:hover {
 }
 ul.topnav li.icon {
     display: none;
+}
+
+#contactInfo {
+    padding-top: 70px;
 }
 
 /*.....................................*/
