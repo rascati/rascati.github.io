@@ -4,7 +4,8 @@ body {
     background-image: url("../public/boat.jpg");
     background-size: cover;
     z-index: -2;
-    /*background-color: #fafafa;*/
+    /*link: red; !important;*/
+    /*background-coflor: #fafafa;*/
 }
 
 .darkenContainer {
@@ -201,6 +202,10 @@ ul.topnav li.icon {
 
 #contactInfo {
     padding-top: 70px;
+}
+
+#contactlinks a {
+    color: rgba(0, 184, 255, 1);
 }
 
 /*.....................................*/
