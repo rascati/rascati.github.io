@@ -1,12 +1,11 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     color: #f2f2f2;
-
     background-image: url("../public/boat.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-
+    z-index: -200;
     /*link: red; !important;*/
     /*background-color: #fafafa;*/
 }
