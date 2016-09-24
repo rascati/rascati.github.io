@@ -25,7 +25,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="212">
               <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="47" />
               <folding />
             </state>
@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/pages/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <caret line="7" column="69" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -288,12 +288,12 @@
       <workItem from="1474423367134" duration="6774000" />
       <workItem from="1474491200730" duration="1624000" />
       <workItem from="1474494015834" duration="1550000" />
-      <workItem from="1474675580696" duration="431000" />
+      <workItem from="1474675580696" duration="494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48057000" />
+    <option name="totallyTimeSpent" value="48120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1056" extended-state="6" />
@@ -652,7 +652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="212">
           <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="47" />
           <folding />
         </state>
@@ -661,7 +661,7 @@
     <entry file="file://$PROJECT_DIR$/pages/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="7" column="69" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="69" />
           <folding />
         </state>
       </provider>
