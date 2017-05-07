@@ -1,79 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="Michael Rascati">
-    <head>
-        <title>Michael Rascati</title>
-        <link href="public/favicon.ico" rel="icon" type="image/x-icon" />
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="public/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="public/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="public/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="public/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="public/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="public/favicon-196x196.png" sizes="196x196" />
-        <link rel="icon" type="image/png" href="public/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="public/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="public/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" type="image/png" href="public/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="Michael Rascati"/>
-        <meta name="msapplication-TileColor" content="#" />
-        <meta name="msapplication-TileImage" content="public/mstile-144x144.png" />
-        <meta name="msapplication-square70x70logo" content="public/mstile-70x70.png" />
-        <meta name="msapplication-square150x150logo" content="public/mstile-150x150.png" />
-        <meta name="msapplication-wide310x150logo" content="public/mstile-310x150.png" />
-        <meta name="msapplication-square310x310logo" content="public/mstile-310x310.png" />
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Michael Rascati</title>
+    <link href="images/favicon/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Michael Rascati"/>
+    <meta name="msapplication-TileColor" content="#" />
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="images/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="images/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="images/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="images/favicon/mstile-310x310.png" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
 
-        <!--<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">-->
-        <!--<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">-->
-        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-        <link href="css/style.css" rel="stylesheet"/>
-        <!--<link href="css/jquery-ui.css" rel="stylesheet"/>-->
+  </head>
+  <body>
 
-        <!--<meta name="apple-mobile-web-app-capable" content="yes">-->
-        <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-        <!--<meta name="viewport" content="initial-scale=1.25, user-scalable = no">-->
+    <div class="main-card">
 
-        <!--<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet"/>-->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+      <img id="profile-picture" src="images/_profile.jpg" alt=""><br>
+      <div class="name">Michael Rascati</div>
 
-        <script src="js/navbar.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
-        <script src="app.js"></script>
-        <script src="config.js"></script>
+      <a href="https://tankdesign.com/">web developer @ tank design</a>
+      <a href="https://www.northeastern.edu/">northeastern university</a>
+      <a href="https://www.ccis.northeastern.edu/">computer science/interactive media</a>
+      <a href="mailto:rascatimichael@gmail.com">rascatimichael [at] gmail.com</a>
 
-    </head>
-    <body id="page" link="rgba(0, 184, 255, 1);">
-        <div class="nav nnn">
-            <ul class="topnav" id="myTopnav">
-                <li><a href="#/home">Home</a></li>
-                <li><a href="#/resume">Resume</a></li>
-                <li><a href="#/portfolio">Portfolio</a></li>
-                <li><a href="#/contact">Contact</a></li>
-                <li class="icon">
-                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-                </li>
-            </ul>
-        </div>
+      <div class="contact-links">
+        <a href="https://github.com/rascati"><img class="icon" src="images/github.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/rascati"><img class="icon" src="images/linkedin.svg" alt=""></a>
+      </div>
 
-        <div ng-view class="container"></div>
 
-        <div class="nav">
-            <ul class="bottomnav" id="myBottomnav">
-                <li id="git"><a href="http://github.com/rascati">
-                        <i class="fa fa-github fa-lg" aria-hidden="true"></i>
-                    </a></li>
-                <li><a href="https://www.linkedin.com/in/rascati" class="tooltip">
-                        <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
-                    </a></li>
-                <li class="footertext"><a>rascatimichael [at] gmail.com</a>
-                </li>
-            </ul>
-        </div>
+    </div>
 
-        <div class="darkenContainer"/>
-    </body>
+  </body>
 </html>
