@@ -21,7 +21,9 @@ a:hover { font-weight: bolder; }
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 325px;
+  width: 33.33%;
+  min-width: 250px;
+  max-width: 325px;
   padding: 25px;
   padding-top: 40px;
   margin: auto;
@@ -45,14 +47,4 @@ a:hover { font-weight: bolder; }
   width: 25px;
   height: 25px;
   padding: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-  .main-card {
-    transform: scale(1.2);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-  }
 }
