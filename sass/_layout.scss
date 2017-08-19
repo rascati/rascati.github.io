@@ -1,0 +1,8 @@
+.l-container {
+  width: 66%;
+  max-width: 1400px;
+  margin: 0 auto;
+  @media screen and (max-width: 600px) {
+    width: 77%;
+  }
+}

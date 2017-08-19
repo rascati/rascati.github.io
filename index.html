@@ -26,27 +26,51 @@
     <meta name="msapplication-square310x310logo" content="images/favicon/mstile-310x310.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="stylesheets/style.css" rel="stylesheet"/>
+    <link href="stylesheets/main.css" rel="stylesheet"/>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Spectral:400,700');
+    </style>
   </head>
   <body>
 
-    <div class="main-card">
+    <header class="l-container">
+      <h1>Michael Rascati</h1>
+    </header>
 
-      <img id="profile-picture" src="rascati.github.io/images/profile.jpg" width="250px" alt="my face was here"><br>
-      <div class="name">MICHAEL RASCATI</div><br>
+    <section class="l-container">
+      <p>
+        I’m a web developer and designer <br>
+        currently at <a href="http://www.northeastern.edu/" target="_blank">Northeastern University</a> <br>
+        studying Computer Science + Interactive Media <br>
+        working at <a href="https://tankdesign.com/" target="_blank">Tank Design</a>
+      </p>
+      <br>
+      <a href="work.html">some work i&rsquo;ve done
+        <svg class="arrow arrow-right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 width="18.32px" height="16.37px" viewBox="0 0 18.32 16.37" enable-background="new 0 0 18.32 16.37" xml:space="preserve">
+        		<polyline fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+        		10.186,1.147 17.257,8.218 10.186,15.29 	"/>
+        		<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.186" y1="8.218" x2="1.186" y2="8.218"/>
+        </svg>
+      </a>
 
-      <a href="https://tankdesign.com/">web developer @ tank design</a>
-      <a href="https://www.northeastern.edu/">northeastern university</a>
-      <a href="https://www.ccis.northeastern.edu/">computer science/interactive media</a>
-      <a href="mailto:rascatimichael@gmail.com">rascatimichael [at] gmail.com</a>
-
-      <div class="contact-links">
-        <a href="https://github.com/rascati"><img class="icon" src="images/github.svg" alt=""></a>
-        <a href="https://www.linkedin.com/in/rascati"><img class="icon" src="images/linkedin.svg" alt=""></a>
-        <a href="documents/Michael-Rascati-Resume.pdf" class="resume" target="_blank">RESUME</a>
+      <div class="l-container">
+        <div class="social__links">
+          <a href="https://github.com/rascati" target="_blank"><img class="icon" src="images/github.svg" alt=""></a>
+          <a href="https://www.linkedin.com/in/rascati" target="_blank"><img class="icon" src="images/linkedin.svg" alt=""></a>
+          <a href="mailto:rascatimichael@gmail.com" target="_blank"><img class="icon" src="images/email.svg" alt=""></a>
+          <!-- <a href="documents/Michael-Rascati-Resume.pdf" class="resume" target="_blank">RESUME</a> -->
+        </div>
       </div>
 
+    </section>
 
-    </div>
+    <footer>
+      <div class="l-container">
+        <div class="footer__link"><a href="documents/Michael-Rascati-Resume.pdf" class="resume" target="_blank">download my resume</a></div>
+        <div class="footer__link"><a href="mailto:rascatimichael@gmail.com" target="_blank">email me</a></div>
+      </div>
+    </footer>
+
   </body>
 </html>
