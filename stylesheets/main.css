@@ -16,12 +16,18 @@ footer .l-container {
   justify-content: center;
   height: 100%;
 }
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/_footer.scss */
+  footer {
+    height: 140px;
+  }
+}
 
-/* line 20, ../sass/_footer.scss */
+/* line 23, ../sass/_footer.scss */
 .footer__link {
   flex-basis: 20%;
 }
-/* line 23, ../sass/_footer.scss */
+/* line 26, ../sass/_footer.scss */
 .footer__link a {
   color: #e9e9e9;
   border: none;
@@ -155,22 +161,23 @@ body {
   /* line 12, ../sass/_base.scss */
   body {
     font-size: 18px;
+    padding-bottom: 140px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  /* line 25, ../sass/_base.scss */
+  /* line 26, ../sass/_base.scss */
   header {
     padding-top: 50px;
   }
 }
 
-/* line 31, ../sass/_base.scss */
+/* line 32, ../sass/_base.scss */
 p a {
   border-bottom: 1px solid #e90000;
 }
 
-/* line 35, ../sass/_base.scss */
+/* line 36, ../sass/_base.scss */
 h1 {
   font-family: 'Calibre Bold', sans-serif;
   font-size: 3.5em;
@@ -179,44 +186,44 @@ h1 {
   margin-bottom: 0;
 }
 @media screen and (max-width: 600px) {
-  /* line 35, ../sass/_base.scss */
+  /* line 36, ../sass/_base.scss */
   h1 {
     font-size: 3em;
     line-height: 1em;
   }
 }
 
-/* line 47, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 h2 {
   font-family: 'Calibre Bold', sans-serif;
   font-size: 1.75em;
 }
 
-/* line 52, ../sass/_base.scss */
+/* line 53, ../sass/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* line 55, ../sass/_base.scss */
+/* line 56, ../sass/_base.scss */
 a:hover {
   color: #e90000;
   cursor: pointer;
 }
-/* line 60, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 a:hover svg * {
   stroke: #e90000;
 }
-/* line 63, ../sass/_base.scss */
+/* line 64, ../sass/_base.scss */
 a:hover .arrow-right {
   margin-left: 12px;
 }
-/* line 64, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 a:hover .arrow-left {
   margin-right: 15px;
   margin-left: -9px;
 }
 
-/* line 71, ../sass/_base.scss */
+/* line 72, ../sass/_base.scss */
 .arrow {
   display: inline;
   margin-bottom: -1px;
