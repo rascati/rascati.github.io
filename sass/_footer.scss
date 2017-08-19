@@ -13,9 +13,13 @@ footer {
     flex-flow: column nowrap;
     justify-content: center;
     height: 100%;
+    @media screen and (max-width: 600px) {
+      justify-content: space-around;
+      padding: 15px 0;
+    }
   }
   @media screen and (max-width: 600px) {
-    height: 140px;
+    height: 110px;
   }
 }
 
