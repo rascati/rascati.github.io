@@ -1,0 +1,14 @@
+.social__links {
+  position: fixed;
+  display: flex;
+  right: 10%;
+  top: 5.5em;
+  flex-flow: column nowrap;
+  img {
+    width: 1.5em;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+footer {
+  color: $background-color;
+  background-color: $text-color;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .l-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+.footer {
+  &__link {
+    flex-basis: 20%;
+
+    a {
+      color: $background-color;
+      border: none;
+      flex: 1;
+    }
+  }
+}

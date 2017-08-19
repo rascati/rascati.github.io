@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/CalibreWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Calibre Bold';
+  src: url('../fonts/CalibreWeb-Semibold.ttf') format('truetype');
+}
+
+$sans-stack-bold: 'Calibre Bold', sans-serif;
+$sans-stack: 'Calibre', sans-serif;
+$serif-stack: 'Spectral', serif;

@@ -1,0 +1,226 @@
+/* line 1, ../sass/_footer.scss */
+footer {
+  color: #e9e9e9;
+  background-color: #212121;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 11, ../sass/_footer.scss */
+footer .l-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 100%;
+}
+
+/* line 20, ../sass/_footer.scss */
+.footer__link {
+  flex-basis: 20%;
+}
+/* line 23, ../sass/_footer.scss */
+.footer__link a {
+  color: #e9e9e9;
+  border: none;
+  flex: 1;
+}
+
+/* line 1, ../sass/_layout.scss */
+.l-container {
+  width: 66%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/_layout.scss */
+  .l-container {
+    width: 77%;
+  }
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url("../fonts/CalibreWeb-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Calibre Bold';
+  src: url("../fonts/CalibreWeb-Semibold.ttf") format("truetype");
+}
+/* line 1, ../sass/_social.scss */
+.social__links {
+  position: fixed;
+  display: flex;
+  right: 10%;
+  top: 5.5em;
+  flex-flow: column nowrap;
+}
+/* line 7, ../sass/_social.scss */
+.social__links img {
+  width: 1.5em;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/_social.scss */
+  .social__links {
+    display: none;
+  }
+}
+
+/* line 1, ../sass/_work.scss */
+article {
+  max-width: 85%;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+  /* line 1, ../sass/_work.scss */
+  article {
+    max-width: 100%;
+  }
+}
+
+/* line 17, ../sass/_work.scss */
+.work__images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 600px) {
+  /* line 17, ../sass/_work.scss */
+  .work__images {
+    justify-content: center;
+  }
+}
+/* line 24, ../sass/_work.scss */
+.work__images img {
+  margin-right: 10px;
+  max-width: 350px;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  /* line 30, ../sass/_work.scss */
+  .work__images img,
+  .work__images span {
+    margin-bottom: 20px;
+  }
+}
+/* line 36, ../sass/_work.scss */
+.work__images .images-landscape {
+  max-width: 580px;
+}
+/* line 39, ../sass/_work.scss */
+.work__images .images-portrait {
+  max-height: 400px;
+  width: auto;
+}
+@media screen and (max-width: 600px) {
+  /* line 43, ../sass/_work.scss */
+  .work__images .images-portrait ~ {
+    width: 50%;
+  }
+}
+
+/* line 51, ../sass/_work.scss */
+.arrow-left {
+  transform: rotate(180deg);
+}
+
+/* line 1, ../sass/_base.scss */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/_base.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 12, ../sass/_base.scss */
+body {
+  font-family: 'Spectral', serif;
+  color: #212121;
+  font-size: 24px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 200px;
+  min-height: 100%;
+}
+@media screen and (max-width: 600px) {
+  /* line 12, ../sass/_base.scss */
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 25, ../sass/_base.scss */
+  header {
+    padding-top: 50px;
+  }
+}
+
+/* line 31, ../sass/_base.scss */
+p a {
+  border-bottom: 1px solid #e90000;
+}
+
+/* line 35, ../sass/_base.scss */
+h1 {
+  font-family: 'Calibre Bold', sans-serif;
+  font-size: 3.5em;
+  line-height: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  /* line 35, ../sass/_base.scss */
+  h1 {
+    font-size: 3em;
+    line-height: 1em;
+  }
+}
+
+/* line 47, ../sass/_base.scss */
+h2 {
+  font-family: 'Calibre Bold', sans-serif;
+  font-size: 1.75em;
+}
+
+/* line 52, ../sass/_base.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 55, ../sass/_base.scss */
+a:hover {
+  color: #e90000;
+  cursor: pointer;
+}
+/* line 60, ../sass/_base.scss */
+a:hover svg * {
+  stroke: #e90000;
+}
+/* line 63, ../sass/_base.scss */
+a:hover .arrow-right {
+  margin-left: 12px;
+}
+/* line 64, ../sass/_base.scss */
+a:hover .arrow-left {
+  margin-right: 15px;
+  margin-left: -9px;
+}
+
+/* line 71, ../sass/_base.scss */
+.arrow {
+  display: inline;
+  margin-bottom: -1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  transition: all .25s;
+}
