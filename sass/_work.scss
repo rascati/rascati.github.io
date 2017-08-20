@@ -1,19 +1,10 @@
 article {
   max-width: 85%;
-  // min-width: 500px;
   margin-bottom: 100px;
-  @media screen and (max-width: 600px) {
-    max-width: 100%;
-  }
+  @media screen and (max-width: 600px) { max-width: 100%; }
 }
 
 .work {
-  &__container {
-
-  }
-  &__description {
-
-  }
   &__images {
     display: flex;
     flex-flow: row wrap;
@@ -29,25 +20,15 @@ article {
     }
     img,
     span {
-      @media screen and (max-width: 600px) {
-        margin-bottom: 20px;
-      }
+      @media screen and (max-width: 600px) { margin-bottom: 20px; }
     }
-    .images-landscape {
-      max-width: 580px;
-    }
+    .images-landscape { max-width: 580px; }
     .images-portrait {
       max-height: 400px;
       width: auto;
-      @media screen and (max-width: 600px) {
-        ~ {
-          width: 50%;
-        }
-      }
+      margin-bottom: 10px;
     }
   }
 }
 
-.arrow-left {
-  transform: rotate(180deg);
-}
+.arrow-left { transform: rotate(180deg); }

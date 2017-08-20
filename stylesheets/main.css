@@ -69,11 +69,22 @@ footer .l-container {
   right: 10%;
   top: 5.5em;
   flex-flow: column nowrap;
+  width: 1.75em;
+  align-items: center;
 }
-/* line 7, ../sass/_social.scss */
+/* line 9, ../sass/_social.scss */
+.social__links a {
+  transition: all .25s;
+}
+/* line 12, ../sass/_social.scss */
+.social__links a:hover {
+  transform: rotate(8deg);
+  margin-right: -10px;
+}
+/* line 16, ../sass/_social.scss */
 .social__links img {
   width: 1.5em;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 @media screen and (max-width: 600px) {
   /* line 1, ../sass/_social.scss */
@@ -94,19 +105,19 @@ article {
   }
 }
 
-/* line 17, ../sass/_work.scss */
+/* line 8, ../sass/_work.scss */
 .work__images {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 @media screen and (max-width: 600px) {
-  /* line 17, ../sass/_work.scss */
+  /* line 8, ../sass/_work.scss */
   .work__images {
     justify-content: center;
   }
 }
-/* line 24, ../sass/_work.scss */
+/* line 15, ../sass/_work.scss */
 .work__images img {
   margin-right: 10px;
   max-width: 350px;
@@ -114,29 +125,24 @@ article {
   width: 100%;
 }
 @media screen and (max-width: 600px) {
-  /* line 30, ../sass/_work.scss */
+  /* line 21, ../sass/_work.scss */
   .work__images img,
   .work__images span {
     margin-bottom: 20px;
   }
 }
-/* line 36, ../sass/_work.scss */
+/* line 25, ../sass/_work.scss */
 .work__images .images-landscape {
   max-width: 580px;
 }
-/* line 39, ../sass/_work.scss */
+/* line 26, ../sass/_work.scss */
 .work__images .images-portrait {
   max-height: 400px;
   width: auto;
-}
-@media screen and (max-width: 600px) {
-  /* line 43, ../sass/_work.scss */
-  .work__images .images-portrait ~ {
-    width: 50%;
-  }
+  margin-bottom: 10px;
 }
 
-/* line 51, ../sass/_work.scss */
+/* line 34, ../sass/_work.scss */
 .arrow-left {
   transform: rotate(180deg);
 }
@@ -172,7 +178,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   /* line 26, ../sass/_base.scss */
   header {
     padding-top: 50px;
@@ -192,7 +198,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   /* line 36, ../sass/_base.scss */
   h1 {
     font-size: 3em;
@@ -217,21 +223,21 @@ a:hover {
   color: #e90000;
   cursor: pointer;
 }
-/* line 62, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 a:hover svg * {
   stroke: #e90000;
 }
-/* line 65, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 a:hover .arrow-right {
   margin-left: 12px;
 }
-/* line 66, ../sass/_base.scss */
+/* line 64, ../sass/_base.scss */
 a:hover .arrow-left {
   margin-right: 15px;
   margin-left: -9px;
 }
 
-/* line 73, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 .arrow {
   display: inline;
   margin-bottom: -1px;

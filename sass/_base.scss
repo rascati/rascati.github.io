@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     padding-top: 50px;
   }
 }
@@ -39,7 +39,7 @@ h1 {
   line-height: 2em;
   margin-top: 0;
   margin-bottom: 0;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     font-size: 3em;
     line-height: 1em;
     margin-bottom: 10px;
@@ -58,9 +58,7 @@ a {
     color: $red;
     cursor: pointer;
 
-    svg {
-      * { stroke: $red; }
-    }
+    svg { * { stroke: $red; } }
 
     .arrow-right { margin-left: 12px; }
     .arrow-left {

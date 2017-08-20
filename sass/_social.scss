@@ -4,9 +4,18 @@
   right: 10%;
   top: 5.5em;
   flex-flow: column nowrap;
+  width: 1.75em;
+  align-items: center;
+  a {
+    transition: all .25s;
+  }
+  a:hover {
+    transform: rotate(8deg);
+    margin-right: -10px;
+  }
   img {
     width: 1.5em;
-    margin-bottom: 5px;
+    margin-top: 5px;
   }
   @media screen and (max-width: 600px) {
     display: none;
