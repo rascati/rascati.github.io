@@ -75,15 +75,16 @@ footer .l-container {
 /* line 9, ../sass/_social.scss */
 .social__links a {
   transition: all .25s;
+  padding: 0 20px;
 }
-/* line 12, ../sass/_social.scss */
+/* line 13, ../sass/_social.scss */
 .social__links a:hover {
   transform: rotate(8deg);
-  margin-right: -10px;
+  margin-right: -15px;
 }
-/* line 16, ../sass/_social.scss */
+/* line 17, ../sass/_social.scss */
 .social__links img {
-  width: 1.5em;
+  width: 2em;
   margin-top: 5px;
 }
 @media screen and (max-width: 600px) {

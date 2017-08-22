@@ -8,13 +8,14 @@
   align-items: center;
   a {
     transition: all .25s;
+    padding: 0 20px;
   }
   a:hover {
     transform: rotate(8deg);
-    margin-right: -10px;
+    margin-right: -15px;
   }
   img {
-    width: 1.5em;
+    width: 2em;
     margin-top: 5px;
   }
   @media screen and (max-width: 600px) {
