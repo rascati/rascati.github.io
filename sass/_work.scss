@@ -17,6 +17,10 @@ article {
       max-width: 350px;
       height: 100%;
       width: 100%;
+      transition: all .25s;
+      &:active {
+        transform: scale(2);
+      }
     }
     img,
     span {
@@ -26,6 +30,7 @@ article {
     .images-portrait {
       max-height: 400px;
       width: auto;
+      height: auto;
       margin-bottom: 10px;
     }
     iframe,
