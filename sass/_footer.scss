@@ -7,6 +7,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
+  font-size: .85em;
 
   .l-container {
     display: flex;
@@ -24,6 +25,7 @@ footer {
 }
 
 .footer {
+
   &__link {
     flex-basis: 20%;
 

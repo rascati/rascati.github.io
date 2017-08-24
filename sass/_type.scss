@@ -1,14 +1,9 @@
 
 @font-face {
-  font-family: 'Calibre';
-  src: url('../fonts/CalibreWeb-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Calibre Bold';
-  src: url('../fonts/CalibreWeb-Semibold.ttf') format('truetype');
+  src: url('../fonts/CalibreWeb-Semibold.woff') format('woff'),
+       url('../fonts/CalibreWeb-Semibold.tff') format('truetype');
 }
 
 $sans-stack-bold: 'Calibre Bold', sans-serif;
-$sans-stack: 'Calibre', sans-serif;
 $serif-stack: 'Spectral', serif;
