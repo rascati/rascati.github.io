@@ -29,9 +29,7 @@ header {
   }
 }
 
-p a {
-  border-bottom: 1px solid $red;
-}
+
 
 h1 {
   font-family: $sans-stack-bold;
@@ -55,7 +53,6 @@ a {
   text-decoration: none;
   color: inherit;
   &:hover {
-    color: $red;
     cursor: pointer;
 
     svg { * { stroke: $red; } }
@@ -68,6 +65,29 @@ a {
   }
   &.navigation__link {
     font-weight: bolder;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+p a {
+  // border-bottom: 1px solid $red;
+  display: inline-block;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid $red;
+    width: 101%;
+    bottom: 0px;
+    transform: translateX(-100%);
+    transition: all .25s ease;
+    z-index: -1;
+    margin-left: 1px;
+  }
+  &:hover:after {
+    border-bottom: 1.5em solid $red;
   }
 }
 

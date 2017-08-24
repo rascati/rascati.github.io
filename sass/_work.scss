@@ -5,6 +5,11 @@ article {
 }
 
 .work {
+  &__description {
+    a:hover {
+      color: $text-color;
+    }
+  }
   &__images {
     display: flex;
     flex-flow: row wrap;
@@ -14,16 +19,8 @@ article {
     }
     img {
       margin-right: 10px;
-      // max-width: 350px;
       height: 100%;
       width: 100%;
-      // transition: all .25s;
-      // @media screen and (min-width: 600px) {
-      //   &:active {
-      //     transform: scale(1.7);
-      //     moz-transform: scale(1.7);
-      //   }
-      // }
     }
     img,
     span {
@@ -31,19 +28,15 @@ article {
          margin-bottom: 20px;
        }
     }
-    // .images-landscape { max-width: 700px; }
     .images-portrait {
       max-height: 550px;
       width: auto;
       height: auto;
       margin-bottom: 10px;
     }
-    // iframe,
     .phone-screenshot {
       max-width: 700px;
       margin: 20px;
-      // margin-bottom: 20px;
-
       border: 1px solid #cdcdcd;
       border-radius: 4px;
       box-shadow: 0px 0px 20px #9d9d9d;
