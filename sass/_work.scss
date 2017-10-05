@@ -6,9 +6,17 @@ article {
 
 .work {
   &__description {
-    a:hover {
-      color: $text-color;
+    a {
+      &:hover {
+        color: $text-color;
+      }
     }
+  }
+  &__title {
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    margin-bottom: -10px;
   }
   &__images {
     display: flex;

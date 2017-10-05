@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding-bottom: 200px;
   min-height: 100%;
+  // line-height: 1.;
   @media screen and (max-width: 600px) {
     font-size: 18px;
     padding-bottom: 110px;
@@ -32,7 +33,7 @@ header {
 
 
 h1 {
-  font-family: $sans-stack-bold;
+  font-family: $heading-stack;
   font-size: 3.5em;
   line-height: 2em;
   margin-top: 0;
@@ -45,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-family: $sans-stack-bold;
+  font-family: $sans-stack;
   font-size: 1.75em;
 }
 
@@ -79,12 +80,12 @@ p a {
     position: absolute;
     content: '';
     border-bottom: 2px solid $red;
-    width: 101%;
-    bottom: 0px;
+    width: 104%;
+    bottom: 2px;
     transform: translateX(-100%);
     transition: all .25s ease;
     z-index: -1;
-    margin-left: 1px;
+    margin-left: 4px;
   }
   &:hover:after {
     border-bottom: 1.5em solid $red;
