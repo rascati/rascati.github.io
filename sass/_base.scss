@@ -80,12 +80,12 @@ p a {
     position: absolute;
     content: '';
     border-bottom: 2px solid $red;
-    width: 104%;
+    width: 102%;
     bottom: 2px;
     transform: translateX(-100%);
     transition: all .25s ease;
     z-index: -1;
-    margin-left: 4px;
+    margin-left: 2px;
   }
   &:hover:after {
     border-bottom: 1.5em solid $red;

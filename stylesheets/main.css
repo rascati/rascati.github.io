@@ -303,12 +303,12 @@ p a:after {
   position: absolute;
   content: '';
   border-bottom: 2px solid #e90000;
-  width: 104%;
+  width: 102%;
   bottom: 2px;
   transform: translateX(-100%);
   transition: all .25s ease;
   z-index: -1;
-  margin-left: 4px;
+  margin-left: 2px;
 }
 /* line 90, ../sass/_base.scss */
 p a:hover:after {
