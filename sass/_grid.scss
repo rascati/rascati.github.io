@@ -1,0 +1,53 @@
+.grid-wrapper {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1.5em;
+  padding: 1em;
+
+  @include respond-to(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include respond-to(small) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 1em;
+  }
+}
+
+.subgrid {
+
+  &-social {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &-intro {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;  
+
+    @include respond-to(medium) {
+      grid-column: 2 / span 2;
+    }
+  }
+
+  &-work {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    
+    @include respond-to(medium) {
+      grid-column: 2 / span 2;
+    }
+  }
+
+  &-name {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+
+  @include respond-to(small) {
+    grid-column: 1;
+  }
+}

@@ -26,52 +26,42 @@
     <meta name="msapplication-square310x310logo" content="images/favicon/mstile-310x310.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="stylesheets/main.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Spectral:400,700|Hind:600');
+    /* @import url('https://fonts.googleapis.com/css?family=Spectral:400,700|Hind:600'); */
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
     </style>
   </head>
+
   <body>
 
-    <header class="l-container">
-      <h1>Michael Rascati</h1>
-    </header>
+    <ul class="grid-wrapper">
 
-    <section class="l-container">
-      <p>
-        I&rsquo;m a web developer and designer <br>
-        from <a href="http://www.northeastern.edu/" target="_blank">Northeastern University</a> <br>
-        studying Computer Science + Interactive Media. <br> <br>
-        Currently working at <a href="http://www.proglove.de/" target="_blank">ProGlove</a>. <br>
-        Previously at <a href="https://tankdesign.com/" target="_blank">Tank Design</a>.
-      </p>
-      <br>
-      <a class="navigation__link" href="work.html">Some work I&rsquo;ve done
-        <svg class="arrow arrow-right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        	 width="18.32px" height="16.37px" viewBox="0 0 18.32 16.37" enable-background="new 0 0 18.32 16.37" xml:space="preserve">
-        		<polyline fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-        		10.186,1.147 17.257,8.218 10.186,15.29 	"/>
-        		<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.186" y1="8.218" x2="1.186" y2="8.218"/>
-        </svg>
-      </br>
+      <li class="subgrid subgrid-intro">
+        I&rsquo;m a web developer and designer from 
+        <a href="http://www.northeastern.edu/" target="_blank">Northeastern University</a> studying Computer Science + Interactive Media. 
+      </li>
 
-      <div class="l-container">
-        <div class="social__links">
-          <a href="https://github.com/rascati" target="_blank"><img class="icon" src="images/github.svg" alt=""></a>
-          <a href="https://www.linkedin.com/in/rascati" target="_blank"><img class="icon" src="images/linkedin.svg" alt=""></a>
-          <a href="mailto:rascatimichael@gmail.com" target="_blank"><img class="icon" src="images/email.svg" alt=""></a>
-          <a href="documents/Michael-Rascati-Resume.pdf" target="_blank"><img class="icon" src="images/resume.svg" alt=""></a>
-        </div>
-      </div>
+      <li class="subgrid subgrid-name">
+        <h1>Michael Rascati</h1>
+      </li>
 
-    </section>
+      <li class="subgrid subgrid-work">
+        <ul>
+          <span>Previously at</span>
+          <li><span>2018 - </span> <a href="http://www.proglove.de/" target="_blank" class="flag-de">ProGlove</a></li>
+          <li><span>2017 - </span> <a href="https://tankdesign.com/" target="_blank">Tank Design</a></li>
+        </ul>
+      </li>
 
-    <footer>
-      <div class="l-container">
-        <div class="footer__link"><a href="mailto:rascatimichael@gmail.com" target="_blank">Email me</a></div>
-        <div class="footer__link"><a href="documents/Michael-Rascati-Resume.pdf" class="resume" target="_blank">Download my resume</a></div>
-      </div>
-    </footer>
+      <li class="subgrid subgrid-social">
+        <a href="mailto:rascatimichael@gmail.com" class="button" target="_blank">Email me</a>
+        <a href="documents/Michael-Rascati-Resume.pdf" class="button" target="_blank">Download my resume</a>
+        <a href="https://github.com/rascati" class="button" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rascati" class="button" target="_blank">LinkedIn</a>
+      </li>
+
+    </ul>
 
   </body>
 </html>
