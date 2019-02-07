@@ -1,105 +1,136 @@
 import React from "react"
-// import { Link } from "gatsby"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
-// import Layout from "./layout"
-// import Image from "./image"
-// import SEO from "./seo"
+import externalLink from "../assets/icons/external-link.svg"
+import resume from "../assets/documents/Michael-Rascati-Resume.pdf"
 
 
 const GridWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  width: calc(70vw - 1.5em);
+  position: fixed;
   padding: 1.5em;
-  /* margin: 1.5em; */
-  /* padding: 1em; */
 
-  & > div {
-    @media only screen and (max-width: 800px) {
-      grid-column: 1;
-    }
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    border: 2px solid black;
+    position: initial;
   }
 
-  @media only screen and (min-width: 800px + 1) and (max-width: 1200px - 1) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media only screen and (max-width: 800px) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 1em;
-  }
-`
-
-const SubgridIntro = styled.div`
-  grid-column: 3 / 5;
-  grid-row: 1 / 2;  
-
-  @media only screen and (min-width: 800px + 1) and (max-width: 1200px - 1) {
-    grid-column: 2 / span 2;    
+  @media only screen and (max-height: 850px) { 
+    padding: 1.5em;
   }
 `
 
 const SubgridName = styled.div`
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-`
-
-const SubgridSocial = styled.div`
-  grid-column: 4 / 5;
-  grid-row: 4 / 5;
-  display: flex;
-  flex-flow: column nowrap;
-`
-
-const SubgridWork = styled.div`
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  
-  @media only screen and (min-width: 800px + 1) and (max-width: 1200px - 1) {
-    grid-column: 2 / span 2;    
+  @media only screen and (min-width: 1000px) {
+    font-size: 2.3rem;
   }
 `
 
+const SubgridIntro = styled.div`
+  @media only screen and (max-height: 850px) { 
+    display: flex;
+    align-items: center;
+  }
+`
 
+const SubgridSocial = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  width: max-content;
+  
+  @media only screen and (max-width: 1000px) {
+    font-size: .9em; 
+    max-width: 60vw;
+  }
+`
+
+const SubgridWork = styled.div`
+`
+
+const rotate = keyframes`
+  from {
+    transform: rotate(-90deg) translateX(0);
+  }
+
+  to {
+    transform: rotate(-90deg) translateX(-15px);
+  }
+`
+
+const ScrollHelper = styled.div`
+  animation: ${rotate} 350ms ease-in-out infinite alternate;
+  position: absolute;
+  right: -10px;
+  bottom: 100px;
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+`
 
 const MainGrid = () => (
   <GridWrapper>
 
-    <SubgridIntro>
-      I&rsquo;m a web developer and designer from <a href="http://www.northeastern.edu/" target="_blank" rel="noopener noreferrer">Northeastern University</a> studying Computer Science + Interactive Media.
-    </SubgridIntro>
-    
     <SubgridName>
       <h1>Michael Rascati</h1>
     </SubgridName>
 
-    <SubgridSocial>
-      <a href="mailto:rascatimichael@gmail.com" className="button" target="_blank" rel="noopener noreferrer">Email me</a>
-      <a href="documents/Michael-Rascati-Resume.pdf" className="button" target="_blank" rel="noopener noreferrer">Download my resume</a>
-      <a href="https://github.com/rascati" className="button button-external" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/rascati" className="button button-external" target="_blank" rel="noopener noreferrer">LinkedIn </a>
-    </SubgridSocial>
+    <SubgridIntro>
+      <h3>Web developer and designer <br />// Boston</h3>
+    </SubgridIntro>
 
     <SubgridWork>
       <ul>
         <span>Previously at</span>
-        <li><span>2018 - </span> <a href="http://www.proglove.de/" target="_blank" rel="noopener noreferrer" className="flag-de">ProGlove</a></li>
-        <li><span>2017 - </span> <a href="https://tankdesign.com/" target="_blank" rel="noopener noreferrer">Tank Design</a></li>
+        <li>
+          <span>2018 - </span>
+          <a
+            href="http://www.proglove.de/"
+            className="flag-de" target="_blank" rel="noopener noreferrer">
+            ProGlove</a>
+        </li>
+        <li>
+          <span>2017 - </span>
+          <a
+            href="https://tankdesign.com/"
+            target="_blank" rel="noopener noreferrer">
+            Tank Design</a>
+        </li>
       </ul>
     </SubgridWork>
 
+
+    <SubgridSocial>
+      <a
+        href="mailto:rascatimichael@gmail.com" 
+        className="button" target="_blank" rel="noopener noreferrer">
+        Email me</a>
+      <a
+        href={resume}
+        className="button" target="_blank" rel="noopener noreferrer">
+        Download my resume</a>
+      <a
+        href="https://github.com/rascati"
+        className="button button-external" target="_blank" rel="noopener noreferrer">
+        GitHub
+        <img src={externalLink} alt="external link icon"/></a>
+      <a 
+        href="https://www.linkedin.com/in/rascati"
+        className="button button-external" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+        <img src={externalLink} alt="external link icon"/></a>
+    </SubgridSocial>
+
+
+    <ScrollHelper>
+      &#8592; scroll
+    </ScrollHelper>
   </GridWrapper>
-  // <Layout>
-  //   <SEO title="Michael Rascati" keywords={[`michael`, `rascati`, `web`, `developer`]} />
-  //   <h1>Hi people</h1>`
-  //   <p>Welcome to your new Gatsby site.</p>
-  //   <p>Now go build something great.</p>
-  //   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-  //     <Image />
-  //   </div>
-  //   <Link to="/page-2/">Go to page 2</Link>
-  // </Layout>
 )
 
 export default MainGrid
