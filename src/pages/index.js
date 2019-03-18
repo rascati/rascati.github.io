@@ -6,7 +6,7 @@ import MainGrid from '../components/MainGrid'
 import PieceGrid from '../components/PieceGrid'
 
 const IndexPage = () => (
-  <div class="background">
+  <div className="background">
     <SEO
       title="Michael Rascati"
       keywords={[`michael`, `rascati`, `web`, `developer`]}

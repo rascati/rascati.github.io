@@ -2,29 +2,23 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
+import Subtext from './Subtext'
+
 const Container = styled.div`
   border-bottom: 2px solid black;
   border-right: 2px solid black;
   padding: 1.5em;
 `
 
-const Title = styled.h3`
-  font-size: 2.5rem;
-`
-
-const Description = styled.p`
-  font-size: 1.75rem;
-`
-
 class Piece extends Component {
   render() {
     return (
       <Container>
-        <span>{this.props.category}</span>
-        <Title>
+        <Subtext>{this.props.category}</Subtext>
+        <h2>
           <Link to={this.props.link}>{this.props.title}</Link>
-        </Title>
-        <Description>{this.props.description}</Description>
+        </h2>
+        <p>{this.props.description}</p>
       </Container>
     )
   }

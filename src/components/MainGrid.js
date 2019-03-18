@@ -1,34 +1,30 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
+import Subtext from './Subtext'
+
 import externalLink from '../assets/icons/external-link.svg'
 import resume from '../assets/documents/Michael-Rascati-Resume.pdf'
 
-const GridWrapper = styled.div`
+const Container = styled.div`
   border: 2px solid black;
   padding: 1.5em;
   margin: 1.5em;
   margin-bottom: 0em;
 `
 
-const SubgridName = styled.div`
+const Name = styled.div`
+  font-size: 1.5rem;
+
   @media only screen and (min-width: 1000px) {
-    font-size: 2.95rem;
+    font-size: 2rem;
   }
 `
 
-const SubgridIntro = styled.div`
-  @media only screen and (min-width: 1000px) {
-    /* font-size: 2.25rem; */
-  }
-`
-
-const SubgridSocial = styled.div`
+const Social = styled.div`
   width: max-content;
   /* font-size: 1.75rem; */
 `
-
-const SubgridWork = styled.div``
 
 const rotate = keyframes`
   from {
@@ -53,46 +49,42 @@ const ScrollHelper = styled.div`
 `
 
 const MainGrid = () => (
-  <GridWrapper>
-    <SubgridName>
+  <Container>
+    <Name>
       <h1>Michael Rascati</h1>
-    </SubgridName>
+    </Name>
 
-    <SubgridIntro>
-      <h3>
-        Web developer and designer <br />
-        // Boston
-      </h3>
-    </SubgridIntro>
+    <h2>
+      Web developer and designer <br />
+      // Boston
+    </h2>
 
-    <SubgridWork>
-      <ul>
-        <span>Previously at</span>
-        <li>
-          <span>2018 - </span>
-          <a
-            href="http://www.proglove.de/"
-            className="flag-de"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ProGlove
-          </a>
-        </li>
-        <li>
-          <span>2017 - </span>
-          <a
-            href="https://tankdesign.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tank Design
-          </a>
-        </li>
-      </ul>
-    </SubgridWork>
+    <ul>
+      <Subtext>Previously at</Subtext>
+      <li>
+        <Subtext>2018 - </Subtext>
+        <a
+          href="http://www.proglove.de/"
+          className="flag-de"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ProGlove
+        </a>
+      </li>
+      <li>
+        <Subtext>2017 - </Subtext>
+        <a
+          href="https://tankdesign.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Tank Design
+        </a>
+      </li>
+    </ul>
 
-    <SubgridSocial>
+    <Social>
       <a
         href="mailto:rascatimichael@gmail.com"
         className="button"
@@ -127,10 +119,10 @@ const MainGrid = () => (
         LinkedIn
         <img src={externalLink} alt="external link icon" />
       </a>
-    </SubgridSocial>
+    </Social>
 
     <ScrollHelper>&#8592; scroll</ScrollHelper>
-  </GridWrapper>
+  </Container>
 )
 
 export default MainGrid
