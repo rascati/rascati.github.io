@@ -117,22 +117,22 @@ button,
 select {
   text-transform: none;
 }
-[type="reset"],
-[type="submit"],
+[type='reset'],
+[type='submit'],
 button,
-html [type="button"] {
+html [type='button'] {
   -webkit-appearance: button;
 }
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -152,21 +152,21 @@ legend {
 textarea {
   overflow: auto;
 }
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 ::-webkit-input-placeholder {
@@ -195,10 +195,10 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 img {
   max-width: 100%;
@@ -458,10 +458,10 @@ td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
@@ -492,13 +492,13 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: ' ';
 }
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-  content: "";
+  content: '';
 }
 @media only screen and (max-width: 480px) {
   html {
@@ -506,7 +506,8 @@ pre tt:after {
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Mono'); */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 /* Custom global styles below.  */
 body {
@@ -514,44 +515,49 @@ body {
   line-height: 1.8em;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.background {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
+  font-family: 'Inconsolata', monospace;
   background-size: 24px 24px;
   background-image: radial-gradient(circle, #b0b0b0 1px, #fcfcfc 1px);
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 @media only screen and (max-width: 1200px) {
-  body { font-size: 18px; }
+  body {
+    font-size: 18px;
+  }
 }
 
-a { color: inherit }
+a {
+  color: inherit;
+}
 a:hover {
   color: white;
   background: black;
 }
 
 .flag-de:hover {
-  color: white; 
+  color: white;
   background: linear-gradient(
     to bottom,
-    black, black 33%,
-    #DD0000 33%, #DD0000 66%,
-    #FFCE00 66%, #FFCE00);
+    black,
+    black 33%,
+    #dd0000 33%,
+    #dd0000 66%,
+    #ffce00 66%,
+    #ffce00
+  );
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: initial;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -560,8 +566,8 @@ span {
 }
 
 a.button {
-  padding: 0.2em 0.7em .2em 0.8em;
-  margin: 0 .6em 0 0;
+  padding: 0.2em 0.7em 0.2em 0.8em;
+  margin: 0 0.6em 0 0;
   background-color: white;
   font-style: italic;
   text-transform: uppercase;
