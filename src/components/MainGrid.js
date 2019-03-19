@@ -2,6 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 import Subtext from './Subtext'
+import FancyLink from './FancyLink'
 
 import externalLink from '../assets/icons/external-link.svg'
 import resume from '../assets/documents/Michael-Rascati-Resume.pdf'
@@ -85,40 +86,32 @@ const MainGrid = () => (
     </ul>
 
     <Social>
-      <a
+      <FancyLink
         href="mailto:rascatimichael@gmail.com"
-        className="button"
         target="_blank"
         rel="noopener noreferrer"
       >
         Email me
-      </a>
-      <a
-        href={resume}
-        className="button"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      </FancyLink>
+      <FancyLink href={resume} target="_blank" rel="noopener noreferrer">
         Download my resume
-      </a>
-      <a
+      </FancyLink>
+      <FancyLink
         href="https://github.com/rascati"
-        className="button button-external"
         target="_blank"
         rel="noopener noreferrer"
       >
         GitHub
         <img src={externalLink} alt="external link icon" />
-      </a>
-      <a
+      </FancyLink>
+      <FancyLink
         href="https://www.linkedin.com/in/rascati"
-        className="button button-external"
         target="_blank"
         rel="noopener noreferrer"
       >
         LinkedIn
         <img src={externalLink} alt="external link icon" />
-      </a>
+      </FancyLink>
     </Social>
 
     <ScrollHelper>&#8592; scroll</ScrollHelper>

@@ -567,34 +567,6 @@ li {
   list-style: none;
 }
 
-a.button {
-  padding: 0.2em 0.7em 0.2em 0.8em;
-  margin: 0 0.6em 0 0;
-  background-color: white;
-  font-style: italic;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid black;
-  transition: all 0.1s ease 0s;
-  margin-top: -2px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.button-external img {
-  margin: 0;
-  height: 1.4em;
-}
-
-a.button:hover {
-  color: black;
-  transform: translate(-6px, -6px);
-  box-shadow: 6px 6px 0px 0px black;
-}
-
 .border {
   border: 2px solid black;
   padding: 1.5em;
