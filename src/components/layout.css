@@ -501,14 +501,21 @@ pre tt:after {
   content: '';
 }
 
-/* @import url('https://fonts.googleapis.com/css?family=Roboto+Mono'); */
+/********************************/
+/* Custom global styles below.  */
+/********************************/
+
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
-/* Custom global styles below.  */
-
 html {
+  font-family: 'Inconsolata', monospace;
   font-size: 24px;
+  line-height: 1.8em;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, #b0b0b0 1px, #fcfcfc 1px);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -523,29 +530,20 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  line-height: 1.8em;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inconsolata', monospace;
-  background-size: 24px 24px;
-  background-image: radial-gradient(circle, #b0b0b0 1px, #fcfcfc 1px);
-}
-
 a {
   color: inherit;
 }
 a:hover {
   color: white;
-  background: black;
+  background: #0c0c0c;
 }
 
 .flag-de:hover {
   color: white;
   background: linear-gradient(
     to bottom,
-    black,
-    black 33%,
+    #0c0c0c,
+    #0c0c0c 33%,
     #dd0000 33%,
     #dd0000 66%,
     #ffce00 66%,
@@ -568,7 +566,7 @@ li {
 }
 
 .border {
-  border: 2px solid black;
+  border: 2px solid #0c0c0c;
   padding: 1.5em;
   margin: 1.5em;
 }

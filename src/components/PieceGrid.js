@@ -8,7 +8,7 @@ const GridWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   margin: 1.5em;
   margin-top: 0;
-  border-left: 2px solid black;
+  border-left: 2px solid #0c0c0c;
 
   @media only screen and (max-width: 750px) {
     display: flex;
@@ -66,17 +66,14 @@ class PieceGrid extends Component {
         title="Venmo Case Study"
         description="Looking at improving the main workflows of the Venmo Android app - find a problematic mobile interface and
         redesign it to improve the user experience."
-        link="">
-        <Pill color="SkyBlue">Design</Pill>
-        <Pill color="MediumSeaGreen">UX</Pill>
-      </Piece> */}
+        link="../work/venmo"
+        category="Design, UX" /> */}
 
         {/* <Piece 
         title="NUPT Logos"
         description="A new logo system for Northeastern's Personal Training department"
-        link="../work/nupt">
-        <Pill color="SkyBlue">Design</Pill>
-      </Piece> */}
+        link="../work/nupt"
+        category="Design" /> */}
       </GridWrapper>
     )
   }

@@ -8,7 +8,7 @@ import externalLink from '../assets/icons/external-link.svg'
 import resume from '../assets/documents/Michael-Rascati-Resume.pdf'
 
 const Container = styled.div`
-  border: 2px solid black;
+  border: 2px solid #0c0c0c;
   padding: 1.5em;
   margin: 1.5em;
   margin-bottom: 0em;

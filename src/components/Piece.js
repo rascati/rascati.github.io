@@ -5,8 +5,8 @@ import styled from 'styled-components'
 import Subtext from './Subtext'
 
 const Container = styled.div`
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 2px solid #0c0c0c;
+  border-right: 2px solid #0c0c0c;
   padding: 1.5em;
 `
 
