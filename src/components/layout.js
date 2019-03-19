@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import styled from "styled-components"
+import React, { Component } from 'react'
+import styled from 'styled-components'
 
-import "./layout.css"
+import './layout.css'
 
 const Outline = styled.div`
   padding: 1.5em;
@@ -17,13 +17,11 @@ const MainWrapper = styled.div`
 class Layout extends Component {
   render() {
     return (
-      <Outline className={this.props.border ? "border" : null}>
+      <Outline className={this.props.border ? 'border' : null}>
         <main>
-          <MainWrapper>
-            {this.props.children}
-          </MainWrapper>
+          <MainWrapper>{this.props.children}</MainWrapper>
         </main>
-        <div className="background"></div>
+        <div className="background" />
       </Outline>
     )
   }
