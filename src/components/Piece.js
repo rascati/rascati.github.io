@@ -1,27 +1,27 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+
+import Subtext from './Subtext'
 
 const Container = styled.div`
-  border-top: 2px solid black;
+  border-bottom: 2px solid #0c0c0c;
+  border-right: 2px solid #0c0c0c;
   padding: 1.5em;
-
-  @media only screen and (max-width: 1000px) {
-    border-top: none; 
-    border-bottom: 2px solid black;
-  }
 `
 
-const Piece = (props) => (
-  <Container>
-    {props.children}
-    <h3>
-      <Link to={props.link}>
-        {props.title}
-      </Link>
-    </h3>
-    <p>{props.description}</p>
-  </Container>
-)
+class Piece extends Component {
+  render() {
+    return (
+      <Container>
+        <Subtext>{this.props.category}</Subtext>
+        <h2>
+          <Link to={this.props.link}>{this.props.title}</Link>
+        </h2>
+        <p>{this.props.description}</p>
+      </Container>
+    )
+  }
+}
 
 export default Piece

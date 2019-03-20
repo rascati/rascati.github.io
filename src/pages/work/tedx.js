@@ -1,52 +1,62 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-
-import VideoContainer from "../../components/VideoContainer"
+import SEO from '../../components/seo'
+import VideoContainer from '../../components/VideoContainer'
 
 const Wrapper = styled.div`
   @media only screen and (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-  } 
+  }
 
   grid-template-columns: 1fr;
 `
 
 const TEDx = () => (
-  <Layout border>
+  <div className="outline-container">
     <SEO title="Work | TEDxCambridge" />
     <Link to="/">Home</Link>
 
     <h1>TEDxCambridge</h1>
-    
+
     <a
-      href="http://www.tedxcambridge.com/our-story/" 
-      target="_blank" rel="noopener noreferrer">
-      www.tedxcambridge.com/our-story/</a>
+      href="http://www.tedxcambridge.com/our-story/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      www.tedxcambridge.com/our-story/
+    </a>
 
     <br />
-    
+    <br />
 
     <Wrapper>
-
       <div>
-        <p>This is a heavily animated "About Us" presentation page I built while at Tank Design for one of the largest TEDx events in the country.</p>  
+        <p>
+          This is a heavily animated "About Us" presentation page I built while
+          at Tank Design for one of the largest TEDx events in the country.
+        </p>
+        <p>
+          The page makes good use of CSS keyframe animations and SVG artwork. A
+          good improvement would be to explore alternatives with the designer in
+          order to limit pageload times and animation lag, improving overall
+          user experience.
+        </p>
       </div>
 
       <VideoContainer>
-        <iframe title="tedx"
+        <iframe
+          title="tedx"
           src="https://www.youtube.com/embed/uVr0obB8bDY?rel=0"
-          frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-        </iframe>
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </VideoContainer>
-
     </Wrapper>
-
-  </Layout>
+  </div>
 )
 
 export default TEDx
