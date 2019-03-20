@@ -3,11 +3,17 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import SEO from '../../components/seo'
+import VideoContainer from '../../components/VideoContainer'
+
+import planetQueenExample from '../../assets/images/planet-queen.png'
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  grid-template-columns: 1fr;
 `
 
 const PlanetQueen = () => (
@@ -21,6 +27,7 @@ const PlanetQueen = () => (
       www.planetqueen.org/
     </a>
     <br />
+    <br />
 
     <Wrapper>
       <div>
@@ -29,10 +36,18 @@ const PlanetQueen = () => (
           on as a developer in my time at Tank Design.
         </p>
         <p>
-          Making this hex grid design respond smoothly on different size devices
-          was one of the largest challenges of the project.
+          Making the hex grid design respond smoothly on differently sized
+          devices was one of the largest challenges of the project. If I was
+          starting the project over, I'd look for a more feature-complete hex
+          grid JavaScript layout engine.
+        </p>
+        <p>
+          The site features animal and environmental philanthropists, investors,
+          and celebrities as a hub for discovery and education. The hexes are
+          clickable with information within.
         </p>
       </div>
+      <img src={planetQueenExample} />
     </Wrapper>
   </div>
 )

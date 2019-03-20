@@ -30,12 +30,19 @@ const TEDx = () => (
     </a>
 
     <br />
+    <br />
 
     <Wrapper>
       <div>
         <p>
           This is a heavily animated "About Us" presentation page I built while
           at Tank Design for one of the largest TEDx events in the country.
+        </p>
+        <p>
+          The page makes good use of CSS keyframe animations and SVG artwork. A
+          good improvement would be to explore alternatives with the designer in
+          order to limit pageload times and animation lag, improving overall
+          user experience.
         </p>
       </div>
 

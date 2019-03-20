@@ -29,6 +29,7 @@ const Gorgiality = () => (
       www.gorgiality.com
     </a>
     <br />
+    <br />
 
     <Wrapper>
       <div>

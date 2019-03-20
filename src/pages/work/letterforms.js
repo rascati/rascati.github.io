@@ -58,13 +58,13 @@ const Letterforms = () => (
         </p>
         <p>
           Each form is made of two different glyphs from the same typeface, with
-          parts of the glyph removed to create a new form.
+          parts of the glyphs removed to create a new form.
         </p>
         <p>
           These are great starting points for logo brainstorming. There's
           potential for some cool marks especially with more work messing around
           with stroke weight and pathing to add a bit more playfullness and
-          movement to the shape.
+          movement to the shapes.
         </p>
       </div>
 

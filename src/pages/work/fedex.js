@@ -35,7 +35,7 @@ const FedEx = () => (
         </p>
         <p>
           Developers can easily view all of the icons in each size and color, as
-          well as download the files and copy the embed code directly.
+          well as download the files and copy the embed codes directly.
         </p>
       </div>
 
