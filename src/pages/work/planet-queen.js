@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import SEO from '../../components/seo'
-import VideoContainer from '../../components/VideoContainer'
-
 import planetQueenExample from '../../assets/images/planet-queen.png'
 
 const Wrapper = styled.div`
@@ -47,7 +45,10 @@ const PlanetQueen = () => (
           clickable with information within.
         </p>
       </div>
-      <img src={planetQueenExample} />
+      <img
+        src={planetQueenExample}
+        alt="screenshot of the planet queen website"
+      />
     </Wrapper>
   </div>
 )
