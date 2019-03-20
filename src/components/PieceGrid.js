@@ -84,15 +84,13 @@ class PieceGrid extends Component {
         >
           More coming soon...
           <Rotate>
-            <span
+            <div
               style={{
                 transform: 'scale(-1, 1)'
               }}
-              role="img"
-              aria-label="duck emoji"
             >
               🦆
-            </span>
+            </div>
           </Rotate>
         </div>
 
