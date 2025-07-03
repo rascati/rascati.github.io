@@ -26,16 +26,24 @@ const FlexRow = styled.div`
   margin-top: 3rem;
 `
 
+const Subtag = styled.div`
+  margin-top: -16px;
+`
+
 const MainGrid = () => (
   <div className="outline-container">
     <Name>
       <h1>Michael Rascati</h1>
     </Name>
 
-    <h2>
-      Web developer and designer <br />
-      // Boston
-    </h2>
+    <div>
+      <h2>
+        Software engineer and designer
+      </h2>
+      <Subtag>
+        // Currently at <a href="https://kaymbu.com/" target="_blank" rel="noopener noreferrer">Kaymbu</a> in Boston
+      </Subtag>
+    </div>
 
     <FlexRow>
       <ul>

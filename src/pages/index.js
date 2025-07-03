@@ -10,7 +10,7 @@ const IndexPage = () => (
   <div>
     <SEO
       title="Michael Rascati"
-      keywords={[`michael`, `rascati`, `web`, `developer`]}
+      keywords={[`michael`, `rascati`, `web`, `developer` ,`software engineer`, `full stack`]}
     />
 
     <MainGrid />
