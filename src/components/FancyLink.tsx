@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const FancyLink = styled.a`
   color: #0c0c0c;
@@ -30,6 +30,6 @@ const FancyLink = styled.a`
     margin: 0;
     height: 1.4rem;
   }
-`
+`;
 
-export default FancyLink
+export default FancyLink;

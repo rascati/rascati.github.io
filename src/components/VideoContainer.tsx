@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const VideoContainer = styled.div`
   position: relative;
@@ -18,6 +18,6 @@ const VideoContainer = styled.div`
       margin-left: 1em;
     } 
   }
-`
+`;
 
-export default VideoContainer
+export default VideoContainer;

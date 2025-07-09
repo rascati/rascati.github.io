@@ -1,13 +1,12 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import SEO from '../components/Seo';
+import VideoContainer from '../components/VideoContainer';
+import jmateLogo from '../assets/images/jmate-logo.svg';
+import profile from '../assets/images/jmate-profile.png';
+import archive from '../assets/images/jmate-archive.png';
+import OutlineContainer from '../components/OutlineContainer';
+import Navbar from '../components/Navbar';
 
-import SEO from '../../components/seo'
-
-import VideoContainer from '../../components/VideoContainer'
-import jmateLogo from '../../assets/images/jmate-logo.svg'
-import profile from '../../assets/images/jmate-profile.png'
-import archive from '../../assets/images/jmate-archive.png'
 
 const FirstWrapper = styled.div`
   @media only screen and (min-width: 1200px) {
@@ -17,7 +16,7 @@ const FirstWrapper = styled.div`
   }
 
   grid-template-columns: 1fr;
-`
+`;
 
 const SecondWrapper = styled.div`
   @media only screen and (min-width: 1200px) {
@@ -27,7 +26,7 @@ const SecondWrapper = styled.div`
   }
 
   grid-template-columns: 1fr;
-`
+`;
 
 const ThirdWrapper = styled.div`
   @media only screen and (min-width: 1200px) {
@@ -37,15 +36,17 @@ const ThirdWrapper = styled.div`
   }
 
   grid-template-columns: 1fr;
-`
+`;
 
 const JMate = () => (
-  <div className="outline-container">
-    <SEO title="Work | J!Mate" />
+  <OutlineContainer>
+    <SEO
+      title='J!Mate'
+      description='JEOPARDY DESCRIPTION'
+    />
+    <Navbar />
 
-    <Link to="/">Home</Link>
-
-    <h1>J!Mate Jeopardy Companion App</h1>
+    <h1>J!Mate Jeopardy Companion App - 2018</h1>
 
     <FirstWrapper>
       <div>
@@ -55,18 +56,18 @@ const JMate = () => (
           targeted to elders.
         </p>
       </div>
-      <img src={jmateLogo} alt="jmate logo" />
+      <img src={jmateLogo} alt='jmate logo' />
       <br />
     </FirstWrapper>
 
     <SecondWrapper>
       <VideoContainer>
         <iframe
-          title="jmate"
-          src="https://www.youtube.com/embed/4UGMTnykcEk?rel=0"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          title='jmate'
+          src='https://www.youtube.com/embed/4UGMTnykcEk?rel=0'
+          style={{ border: 0 }}
+          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen
         />
       </VideoContainer>
       <div>
@@ -98,11 +99,11 @@ const JMate = () => (
         </p>
       </div>
 
-      <img src={profile} alt="user profile screenshot" />
-      <img src={archive} alt="episode archive screenshot" />
+      <img src={profile} alt='user profile screenshot' />
+      <img src={archive} alt='episode archive screenshot' />
       <br />
     </ThirdWrapper>
-  </div>
-)
+  </OutlineContainer>
+);
 
-export default JMate
+export default JMate;

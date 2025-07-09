@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import SEO from '../components/Seo';
+import VideoContainer from '../components/VideoContainer';
+import OutlineContainer from '../components/OutlineContainer';
+import Navbar from '../components/Navbar';
 
-import SEO from '../../components/seo'
-import VideoContainer from '../../components/VideoContainer'
 
 const Wrapper = styled.div`
   @media only screen and (min-width: 1200px) {
@@ -12,14 +12,19 @@ const Wrapper = styled.div`
   }
 
   grid-template-columns: 1fr;
-`
+`;
 
 const FedEx = () => (
-  <div className="outline-container">
-    <SEO title="Work | FedEx" />
-    <Link to="/">Home</Link>
+  <OutlineContainer>
+    <SEO
+      title='FedEx Icon System'
+      description='A responsive SVG icon system for FedEx'
+      keywords={['FedEx', 'SVG', 'icon system', 'design system']}
+    />
+    {/* <SEO title='Work | FedEx' /> */}
+    <Navbar />
 
-    <h1>FedEx Icon System</h1>
+    <h1>FedEx Icon System - 2017</h1>
 
     <Wrapper>
       <div>
@@ -41,15 +46,15 @@ const FedEx = () => (
 
       <VideoContainer>
         <iframe
-          title="fedex"
-          src="https://www.youtube.com/embed/FmRLI0ocy7M?rel=0"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          title='fedex'
+          src='https://www.youtube.com/embed/FmRLI0ocy7M?rel=0'
+          style={{ border: 0 }}
+          allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen
         />
       </VideoContainer>
     </Wrapper>
-  </div>
-)
+  </OutlineContainer>
+);
 
-export default FedEx
+export default FedEx;
