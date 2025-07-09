@@ -1,15 +1,14 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import SEO from '../components/Seo';
+import yv from '../assets/images/yv-01.svg';
+import amperquote from '../assets/images/amperquote.svg';
+import qi from '../assets/images/qi.svg';
+import jseven from '../assets/images/jseven.svg';
+import uf from '../assets/images/uf.svg';
+import ampersands from '../assets/images/ampersands.svg';
+import OutlineContainer from '../components/OutlineContainer';
+import Navbar from '../components/Navbar';
 
-import SEO from '../../components/seo'
-
-import yv from '../../assets/images/yv-01.svg'
-import amperquote from '../../assets/images/amperquote.svg'
-import qi from '../../assets/images/qi.svg'
-import jseven from '../../assets/images/jseven.svg'
-import uf from '../../assets/images/uf.svg'
-import ampersands from '../../assets/images/ampersands.svg'
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,7 +19,7 @@ const Wrapper = styled.div`
     flex-flow: column nowrap;
     align-items: center;
   }
-`
+`;
 
 const Images = styled.div`
   display: grid;
@@ -41,14 +40,19 @@ const Images = styled.div`
       margin: 1.5em 1em;
     }
   }
-`
+`;
 
 const Letterforms = () => (
-  <div className="outline-container">
-    <SEO title="Work | Letterforms" />
-    <Link to="/">Home</Link>
+  <OutlineContainer>
+    <SEO title='Work | Letterforms' />
+    <SEO
+      title='Letterforms'
+      description='DESCRIPTION'
+      // keywords={['FedEx', 'SVG', 'icon system', 'design system']}
+    />
+    <Navbar />
 
-    <h1>Letterforms</h1>
+    <h1>Letterforms - 2018</h1>
 
     <Wrapper>
       <div>
@@ -69,15 +73,15 @@ const Letterforms = () => (
       </div>
 
       <Images>
-        <img src={yv} alt="letterform example" />
-        <img src={amperquote} alt="letterform example" />
-        <img src={qi} alt="letterform example" />
-        <img src={jseven} alt="letterform example" />
-        <img src={uf} alt="letterform example" />
-        <img src={ampersands} alt="letterform example" />
+        <img src={yv} alt='letterform example' />
+        <img src={amperquote} alt='letterform example' />
+        <img src={qi} alt='letterform example' />
+        <img src={jseven} alt='letterform example' />
+        <img src={uf} alt='letterform example' />
+        <img src={ampersands} alt='letterform example' />
       </Images>
     </Wrapper>
-  </div>
-)
+  </OutlineContainer>
+);
 
-export default Letterforms
+export default Letterforms;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -505,7 +507,6 @@ pre tt:after {
 /* Custom global styles below.  */
 /********************************/
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 html {
   font-family: 'Inconsolata', monospace;
@@ -565,9 +566,9 @@ li {
   list-style: none;
 }
 
-.outline-container {
+/* .outline-container {
   border: 2px solid #0c0c0c;
   padding: 1.5em;
   margin: 1.5em;
   margin-bottom: 0em;
-}
+} */

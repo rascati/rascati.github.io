@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import SEO from '../components/Seo';
+import planetQueenExample from '../assets/images/planet-queen.png';
+import OutlineContainer from '../components/OutlineContainer';
+import Navbar from '../components/Navbar';
 
-import SEO from '../../components/seo'
-import planetQueenExample from '../../assets/images/planet-queen.png'
 
 const Wrapper = styled.div`
   @media only screen and (min-width: 1200px) {
@@ -12,16 +12,19 @@ const Wrapper = styled.div`
   }
 
   grid-template-columns: 1fr;
-`
+`;
 
 const PlanetQueen = () => (
-  <div className="outline-container">
-    <SEO title="Work | Planet Queen" />
+  <OutlineContainer>
+    <SEO
+      title='Planet Queen'
+      description='DESCRIPTION'
+    />
 
-    <Link to="/">Home</Link>
+    <Navbar />
 
-    <h1>Planet Queen</h1>
-    <a href="http://planetqueen.org/" target="_blank" rel="noopener noreferrer">
+    <h1>Planet Queen - 2017</h1>
+    <a href='https://planetqueen.org/' target='_blank' rel='noopener noreferrer'>
       www.planetqueen.org/
     </a>
     <br />
@@ -47,10 +50,10 @@ const PlanetQueen = () => (
       </div>
       <img
         src={planetQueenExample}
-        alt="screenshot of the planet queen website"
+        alt='screenshot of the planet queen website'
       />
     </Wrapper>
-  </div>
-)
+  </OutlineContainer>
+);
 
-export default PlanetQueen
+export default PlanetQueen;
