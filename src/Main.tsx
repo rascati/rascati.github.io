@@ -12,7 +12,7 @@ import JMate from './pages/Jmate';
 import TEDx from './pages/TEDx';
 import Gorgiality from './pages/Gorgiality';
 import NotFoundPage from './pages/404';
-import './components/Layout.css';
+import './styles/Layout.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
